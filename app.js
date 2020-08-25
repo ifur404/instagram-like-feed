@@ -55,32 +55,6 @@ function getHome(){
   })
 }
 
-function seeStory(){
-  fetch("https://www.instagram.com/stories/reel/seen?hl=id", {
-    "headers": {
-      "accept": "*/*",
-      "accept-language": "en-US,en;q=0.9",
-      "content-type": "application/x-www-form-urlencoded",
-      "sec-fetch-dest": "empty",
-      "sec-fetch-mode": "cors",
-      "sec-fetch-site": "same-origin",
-      "x-csrftoken": "TLw2xdRRtrDA1L0ec9QCJs9FUv8ILjZ3",
-      "x-ig-app-id": "936619743392459",
-      "x-ig-www-claim": "hmac.AR3vMVk0FZ-DlyQ2lPKqgFyeXyTGGLw8uA2PN-GPpA0EyhHW",
-      "x-instagram-ajax": "98349da5360c",
-      "x-requested-with": "XMLHttpRequest",
-      "cookie": "ig_did=E107FCF9-B61A-4587-A2BE-C74E736D15FC; mid=X0OM4AALAAEWyIy9zZJs_0-TL9XK; fbm_124024574287414=base_domain=.instagram.com; csrftoken=TLw2xdRRtrDA1L0ec9QCJs9FUv8ILjZ3; ds_user_id=1552699077; sessionid=1552699077%3ATtj0lkFwBwJYHZ%3A15; shbid=894; shbts=1598262521.2791069; rur=ASH; urlgen=\"{\\\"110.138.151.66\\\": 7713}:1kAO3w:vCqgnk1SU_sbbneN9zMjnf1MLVw\""
-    },
-    "referrer": "https://www.instagram.com/",
-    "referrerPolicy": "no-referrer-when-downgrade",
-    "body": "reelMediaId=2382567333706464378&reelMediaOwnerId=3104719430&reelId=3104719430&reelMediaTakenAt=1598244175&viewSeenAt=1598244175",
-    "method": "POST",
-    "mode": "cors"
-  }).then(res=>res.text())
-  .then(body=>{
-    fs.writeFileSync('story.html',body)
-  })
-}
 
 function postLike(){
   const id = process_like_arr[0].id
@@ -133,5 +107,4 @@ function main(){
   },getRndInteger(3000,30000))
 }
 
-// main()
-seeStory()
+main()

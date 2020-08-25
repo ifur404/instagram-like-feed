@@ -1,5 +1,5 @@
 {
-  "name": "instagram-like",
+  "name": "botlike-instagram",
   "version": "1.0.0",
   "description": "bot like feed instagram",
   "main": "app.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ifur404/instagram-like-feed.git"
+    "url": "git+https://github.com/ifur404/like-feed-instagram.git"
   },
   "keywords": [
     "botlike"
@@ -16,9 +16,9 @@
   "author": "Ahmad Saepurramdan",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ifur404/instagram-like-feed/issues"
+    "url": "https://github.com/ifur404/like-feed-instagram/issues"
   },
-  "homepage": "https://github.com/ifur404/instagram-like-feed#readme",
+  "homepage": "https://github.com/ifur404/like-feed-instagram#readme",
   "dependencies": {
     "node-fetch": "^2.6.0"
   }
